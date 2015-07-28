@@ -1,9 +1,6 @@
 {
   "name": "md-chips-select",
-  "main": [
-    "md-chips-select.js", 
-    "md-chips-select.css"
-  ],
+  "main": "dist",
   "dependencies": [
     "angular": "~1.4.4"
     "angular-animate": "~1.4.4"
