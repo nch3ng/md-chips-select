@@ -8,7 +8,7 @@ Include the md-chips-select.js and md-chips-select.css
 
 In your HTML file:
 
-&lt;md-chips-select ng-model=&quot;myItems&quot; select-items=&quot;sItems&quot; main-title=&quot;name&quot;&gt;&lt;/md-chips-select&gt;
+&lt;md-chips-select ng-model=&quot;selectedItems&quot; select-items=&quot;listItems&quot; main-title=&quot;name&quot;&gt;&lt;/md-chips-select&gt;
 
 <b>ng-model (required)</b>:  The array to store the selected items<br>
 <b>select-items (required)</b>: The array of the items in the select list<br>
@@ -20,10 +20,10 @@ In your HTML file:
 In your javascript:
 
 Add an array for ngModel (selected)
-Ex: $scope.myItems = []
+Ex: $scope.selectedItems = []
 
 Add an array for select-items
-Ex: $scope.sItems = [{
+Ex: $scope.listItems = [{
       name: "Mini Cooper",
       id: 0
     }, {
