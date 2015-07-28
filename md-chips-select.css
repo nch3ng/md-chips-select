@@ -58,6 +58,13 @@
   animation:0.5s fadeIn ease; 
 }
 
+.md-chips-select{
+  box-shadow:0 1px #e0e0e0;
+}
+.md-chips-select.md-focused {
+  box-shadow: 0 2px rgb(63, 81, 181);
+}
+
 md-chips-select .md-chip {
   background: #e0e0e0;
   color: #424242;
