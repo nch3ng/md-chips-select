@@ -7,7 +7,7 @@ The Angularjs Plugin - Learn from [Angular Material](https://material.angularjs.
 
 Include the md-chips-select.js and md-chips-select.css
 
-<b>In your HTML file:</b>
+<b>In HTML:</b>
 
 &lt;md-chips-select ng-model=&quot;selectedItems&quot; select-items=&quot;listItems&quot; main-title=&quot;name&quot;&gt;&lt;/md-chips-select&gt;
 
@@ -18,7 +18,7 @@ Include the md-chips-select.js and md-chips-select.css
   
   It will combine the value of the attribute "name" and "id" (See the example below)
 
-<b>In your javascript:</b>
+<b>In javascript:</b>
 
 Add an array for ngModel (selected)
 Ex: $scope.selectedItems = []
