@@ -7,7 +7,12 @@ The Angularjs module - Learn from [Angular Material](https://material.angularjs.
 
 <b>Prerequisites:</b> angular.js, angular-animate.js
 
-Include the md-chips-select.js and md-chips-select.css
+You can install the package via bower
+```shell
+bower install md-chips-select
+```
+
+Include the md-chips-select.js and md-chips-select.css in the HTML file
 
 <b>In HTML:</b>
 
