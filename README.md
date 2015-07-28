@@ -3,7 +3,7 @@ The Angularjs Plugin - Learn from [Angular Material](https://material.angularjs.
 [Demo](http://codepen.io/boo0330/pen/EjOWgg) in Codepen
 
 
-Prerequisites: angular.js, angular-animate.js
+<b>Prerequisites:</b> angular.js, angular-animate.js
 
 Include the md-chips-select.js and md-chips-select.css
 
