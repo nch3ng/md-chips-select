@@ -8,7 +8,12 @@ The Angularjs module - Learn from [Angular Material](https://material.angularjs.
 
 <b>Prerequisites:</b> angular.js, angular-animate.js
 
-You can install the package via bower
+You can install the package
+via npm
+```shell
+npm install md-chips-select
+```
+or via bower
 ```shell
 bower install md-chips-select
 ```
