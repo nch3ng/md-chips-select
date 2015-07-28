@@ -1,9 +1,10 @@
-Learn from [Angular Material](https://material.angularjs.org/latest/#/), and add a multi-select menu to md-chips.
+The Angularjs Plugin - Learn from [Angular Material](https://material.angularjs.org/latest/#/), and add a multi-select menu to md-chips.
 
 [Demo](http://codepen.io/boo0330/pen/EjOWgg) in Codepen
 
 
-Prerequisites: angularjs
+Prerequisites: angular.js, angular-animate.js
+
 Include the md-chips-select.js and md-chips-select.css
 
 <b>In your HTML file:</b>
