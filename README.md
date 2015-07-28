@@ -1,6 +1,6 @@
 The Angularjs Plugin - Learn from [Angular Material](https://material.angularjs.org/latest/#/), and add a multi-select menu to md-chips.
 
-[Demo](http://codepen.io/boo0330/pen/EjOWgg) in Codepen
+<b>[Demo](http://codepen.io/boo0330/pen/EjOWgg)</b> in Codepen
 
 
 <b>Prerequisites:</b> angular.js, angular-animate.js
