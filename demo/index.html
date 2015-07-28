@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-App="demoapp">
+<head>
+  <title>NgApp</title>
+  
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-aria.min.js"></script>
+  <script src="js/angular-animate.min.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="../md-chips-select.js"></script>
+  <script src="js/demo.js"></script>
+  <link rel="stylesheet" href="../md-chips-select.css" />
+  <style>
+
+    .md-chips-select{
+      box-shadow:0 1px #e0e0e0;
+    }
+    .md-chips-select.md-focused {
+      box-shadow: 0 2px rgb(63, 81, 181);
+    }
+
+
+    md-chips .md-chips
+    {
+      box-shadow:0 1px #e0e0e0;
+    }
+
+    md-chips .md-chip
+    {
+      background:#e0e0e0;
+      color:#424242;
+    }
+
+    md-chips md-chip-remove .md-button md-icon path
+    {
+      fill:#9e9e9e;
+    }
+  </style>
+</head>
+<body ng-controller="mainCtrl">
+<div class="row">
+  Tag: 
+</div>
+<div class="row">
+	<div ng-controller="chipsSelectCtrl">
+		<span>You have selected: {{myItems}} </span>
+		<md-chips-select ng-model="myItems" select-items="sItems" main-title="name"></md-chips-select>
+	</div>
+</div>
