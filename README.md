@@ -8,7 +8,7 @@ Include the md-chips-select.js and md-chips-select.css
 
 In your HTML file:
 
-<md-chips-select ng-model="myItems" select-items="sItems" main-title="name"></md-chips-select>
+&lt;md-chips-select ng-model=&quot;myItems&quot; select-items=&quot;sItems&quot; main-title=&quot;name&quot;&gt;&lt;/md-chips-select&gt;
 
 <b>ng-model (required)</b>:  The array to store the selected items<br>
 <b>select-items (required)</b>: The array of the items in the select list<br>
