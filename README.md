@@ -1,12 +1,12 @@
 Learn from [Angular Material](https://material.angularjs.org/latest/#/), and add a multi-select menu to md-chips.
 
-[Demo](http://codepen.io/boo0330/pen/EjOWgg)
+[Demo](http://codepen.io/boo0330/pen/EjOWgg) in Codepen
 
 
 Prerequisites: angularjs
 Include the md-chips-select.js and md-chips-select.css
 
-In your HTML file:
+<b>In your HTML file:</b>
 
 &lt;md-chips-select ng-model=&quot;selectedItems&quot; select-items=&quot;listItems&quot; main-title=&quot;name&quot;&gt;&lt;/md-chips-select&gt;
 
@@ -17,7 +17,7 @@ In your HTML file:
   
   It will combine the value of the attribute "name" and "id" (See the example below)
 
-In your javascript:
+<b>In your javascript:</b>
 
 Add an array for ngModel (selected)
 Ex: $scope.selectedItems = []
