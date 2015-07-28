@@ -10,9 +10,9 @@ In your HTML file:
 
 <md-chips-select ng-model="myItems" select-items="sItems" main-title="name"></md-chips-select>
 
-ng-model (required):  The array to store the selected items
-select-items (required): The array of the items in the select list
-main-title (optional): The attributes seperated by space. It will combine all value of the attributes as the title of the list item.  If the main-title is not given, there must be one attibute named "title" in the select-items array
+<b>ng-model (required)</b>:  The array to store the selected items
+<b>select-items (required)</b>: The array of the items in the select list
+<b>main-title (optional)</b>: The attributes seperated by space. It will combine all value of the attributes as the title of the list item.  If the main-title is not given, there must be one attibute named "title" in the select-items array
   Ex: main-title = "name id"
   
   It will combine the value of the attribute "name" and "id" (See the example below)
