@@ -11,12 +11,17 @@
   <link rel="stylesheet" href="../md-chips-select.css" />
 </head>
 <body ng-controller="mainCtrl">
-<div class="row">
-  Tag: 
-</div>
-<div class="row">
+  <div class="row">
 	<div ng-controller="chipsSelectCtrl">
 		<span>You have selected: {{myItems}} </span>
 		<md-chips-select ng-model="myItems" select-items="sItems" main-title="name"></md-chips-select>
-	</div>
-</div>
+    </div>
+  </div>
+  <div class="row">
+    <div ng-controller="cChipsSelectCtrl">
+		<span>Where have you been: {{selectedCoutries}} </span>
+		<md-chips-select ng-model="selectedCoutries" select-items="countiesList" main-title="country id"></md-chips-select>
+    </div>
+  </div>
+</body>
+</html>

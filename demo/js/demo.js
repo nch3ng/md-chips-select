@@ -9,9 +9,35 @@ demoApp.controller('chipsCtrl', ["$scope", function($scope){
 }]);
 demoApp.controller('chipsSelectCtrl', ["$scope", function($scope){
 	$scope.myItems = [];
-	$scope.sItems = [
-		{ name: "Veges", id: 0},
-		{ name: "Rice", id: 1},
-		{ name: "Noodle", id: 2},
-		{ name: "Soup", id: 3}];
+	$scope.sItems = [{
+      name: "Mini Cooper",
+      id: 0
+    }, {
+      name: "Lexus IS250",
+      id: 1
+    }, {
+      name: "Ford F150",
+      id: 2
+    }, {
+      name: "Toyota Prius",
+      id: 3
+    }];
+}]);
+
+demoApp.controller('cChipsSelectCtrl', ["$scope", function($scope){
+  
+    $scope.selectedCoutries = [];
+    $scope.countiesList = [{
+      country: "Taiwan",
+      id: 0
+    }, {
+      country: "United States",
+      id: 1
+    }, {
+      country: "United Kingdom",
+      id: 2
+    }, {
+      country: "Hong Kong",
+      id: 3
+    }];
 }]);

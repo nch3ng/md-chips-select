@@ -40,7 +40,7 @@ angular.module('md.chips.select', [])
     replace: false,
     controller: "mdChipsCtrl",
     template: function(element, attrs) {
-      //console.log("template...");
+   
       return MD_CHIPS_SELECT_TEMPLATE;
     },
     require: "?ngModel",
@@ -69,8 +69,6 @@ angular.module('md.chips.select', [])
       });
 
       $document.bind('click', function(e){
-        console.log(e.target.nodeName);
-        console.log(e.target.attributes.getNamedItem("class").value);
         var clicked = e.target.nodeName;
         if( e.target.nodeName != "MD-SELECT-ITEM-WRAPPER"
             && e.target.nodeName != "MD-SELECT-ITEM-TITLE" 
@@ -79,8 +77,6 @@ angular.module('md.chips.select', [])
             && (e.target.nodeName != "SPAN" || e.target.attributes.getNamedItem("class").value.indexOf("md-chip-content") == -1)
             && (e.target.nodeName != "SPAN" || e.target.attributes.getNamedItem("class").value.indexOf("remove") == -1)
           ){
-          //console.log(e.target.nodeName);
-          //console.log(e.target.attributes.getNamedItem("class").value.indexOf("md-chip-content"));
           
             $timeout(function(){
               // Close select panel
@@ -90,7 +86,6 @@ angular.module('md.chips.select', [])
       });
       
       scope.onInputFocus = function(event){
-        //console.log(event.currentTarget.offsetTop);
         scope.ytop = (event.currentTarget.offsetTop+35) +'px';
         scope.xleft = (event.currentTarget.offsetLeft) + 'px';
         scope.selectActive = true;
@@ -127,20 +122,19 @@ angular.module('md.chips.select', [])
       }
 
       scope.addToChips = function(obj){
-        console.log(obj);
         scope.ngModel.push(obj);
         scope.chipInput = "";
         scope.chipInput.focus=true;
       }
 
       scope.toggleItem = function(item) {
-        console.log("toggle");
+
         //var item = scope.mdSelectItems[index];
         var chipIndex = scope.ngModel.indexOf(item);
-        //console.log(index+' ' + item + ' ' + chipIndex);
+
         if(  chipIndex != -1 ) {
           scope.removeFromChips(chipIndex);
-          //console.log("De-select");
+
         } else {
           scope.addToChips(item);
         }
@@ -150,8 +144,7 @@ angular.module('md.chips.select', [])
         return scope.ngModel.indexOf(item) == -1;
       }  
       scope.inputQuery = function(item) {
-        //console.log(item.mainTitle);
-        //console.log(scope.chipInput);
+
         if(!scope.chipInput ||
           scope.chipInput == "" || angular.lowercase(item.mainTitle).indexOf(angular.lowercase(scope.chipInput))!=-1)
           return true;
