@@ -58,6 +58,17 @@ angular.module('md.chips.select', [])
         scope.mainTitle = "title";
       }
       var subString = scope.mainTitle.split(' ');
+      
+      angular.forEach(scope.mdChipItems, function(obj, key){
+        obj.mainTitle = '';
+        angular.forEach(subString, function(field, fkey){
+          if(obj[field]!=null){
+            obj.mainTitle += obj[field].toString();
+            obj.mainTitle += ' ';
+          }
+        });
+      });
+      
       angular.forEach(scope.mdSelectItems, function(obj, key){
         obj.mainTitle = '';
         angular.forEach(subString, function(field, fkey){
