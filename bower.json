@@ -1,12 +1,15 @@
 {
   "name": "md-chips-select",
   "main": "md-chips-select.js",
-  "dependencies": [],
-  "version": "0.0.8",
+  "version": "0.0.9",
   "homepage": "https://github.com/boo0330/md-chips-select",
   "authors": [
     "NateC <boo0330@gmail.com>"
   ],
+  "dependencies" :{
+    "angular": "~1.4.3",
+    "angular-animate": "~1.4.3"
+  },
   "description": "The material design md-chips with mutiple select menu",
   "keywords": [
     "md-chips",
