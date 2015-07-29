@@ -6,7 +6,7 @@
   "authors": [
     "NateC <boo0330@gmail.com>"
   ],
-  "dependencies" :{
+  "dependencies": {
     "angular": "~1.4.3",
     "angular-animate": "~1.4.3"
   },
