@@ -27,26 +27,29 @@ Include the md-chips-select.js and md-chips-select.css in the HTML file
 <b>ng-model (required)</b>:  The array to store the selected items<br>
 <b>select-items (required)</b>: The array of the items in the select list<br>
 <b>main-title (optional)</b>: The attributes seperated by space. It will combine all value of the attributes as the title of the list item.  If the main-title is not given, there must be one attibute named "title" in the select-items array<br>
-  Ex: main-title = "name id"
-  
+<p>
+  Ex: main-title = "name id"<br>
   It will combine the value of the attribute "name" and "id" (See the example below)
-
+</p>
 <b>In javascript:</b>
 
 Add an array for ngModel (selected)
+<p>
 Ex: $scope.selectedItems = []
-
+</p>
 Add an array for select-items
-Ex: $scope.listItems = [{
-      name: "Mini Cooper",
-      id: 0
-    }, {
-      name: "Lexus IS250",
-      id: 1
-    }, {
-      name: "Ford F150",
-      id: 2
-    }, {
-      name: "Toyota Prius",
-      id: 3
-    }];
+<p>
+Ex: $scope.listItems = [{ <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;name: "Mini Cooper", <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;id: 0 <br>
+    &nbsp;&nbsp;}, { <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;name: "Lexus IS250", <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;id: 1 <br>
+    &nbsp;&nbsp;}, { <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;name: "Ford F150", <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;id: 2 <br>
+    &nbsp;&nbsp;}, { <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;name: "Toyota Prius", <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;id: 3 <br>
+    &nbsp;&nbsp;}]; <br>
+</p>
