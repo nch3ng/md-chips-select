@@ -139,12 +139,13 @@ angular.module('md.chips.select', [])
       }
 
       scope.toggleItem = function(item) {
-
-        //var item = scope.mdSelectItems[index];
+        
         var chipIndex = scope.ngModel.indexOf(item);
-
+        console.log(scope.ngModel);
+console.log(item);
+        console.log(chipIndex);
         if(  chipIndex != -1 ) {
-          scope.removeFromChips(chipIndex);
+          scope.removeFromChips(item);
 
         } else {
           scope.addToChips(item);

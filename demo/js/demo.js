@@ -8,13 +8,7 @@ demoApp.controller('chipsCtrl', ["$scope", function($scope){
 	$scope.fruitNames = ["Apple"];
 }]);
 demoApp.controller('chipsSelectCtrl', ["$scope", function($scope){
-	$scope.myItems = [{
-      name: "Porsche 911",
-      id: 4
-    }, {
-      name: "Ferreri 488",
-      id: 5
-    }];
+	
 	$scope.sItems = [{
       name: "Mini Cooper",
       id: 0
@@ -27,7 +21,15 @@ demoApp.controller('chipsSelectCtrl', ["$scope", function($scope){
     }, {
       name: "Toyota Prius",
       id: 3
+    },{
+      name: "Porsche 911",
+      id: 4
+    }, {
+      name: "Ferreri 488",
+      id: 5
     }];
+  
+    $scope.myItems = [ $scope.sItems[4], $scope.sItems[5]];
 }]);
 
 demoApp.controller('cChipsSelectCtrl', ["$scope", function($scope){
