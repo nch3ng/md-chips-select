@@ -33,6 +33,9 @@ Include the md-chips-select.js and md-chips-select.css in the HTML file
 </p>
 <b>In javascript:</b>
 
+Inject the modules "ngAnimate" & "md.chips.select" when you initialize the app.   
+Ex: angular.module("yourApp", ['ngAnimate', 'md.chips.select']);   
+
 Add an array for ngModel (selected)
 <p>
 Ex: $scope.selectedItems = []
