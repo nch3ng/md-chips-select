@@ -3,7 +3,7 @@
 
 The Angularjs module - Learn from [Angular Material](https://material.angularjs.org/latest/#/), and add a multi-select menu to md-chips. <b>[Demo](http://codepen.io/boo0330/pen/EjOWgg)</b> in Codepen
 
-<img src="https://content-na.drive.amazonaws.com/cdproxy/templink/sOIxs96zCt66ZK3yz14TNBs_xSiwqfGt48JfuqJO6roLAYspN?viewBox=1404" width="30%">
+<img src="http://i359.photobucket.com/albums/oo37/Nate_Cheng/screenshot_zpsvvwvnaay.png" width="30%">
 
 
 <b>Prerequisites:</b> angular.js, angular-animate.js
