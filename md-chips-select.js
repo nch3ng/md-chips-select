@@ -19,6 +19,12 @@ var MD_CHIPS_SELECT_TEMPLATE = '\
     <md-select-list ng-show="selectActive" ng-style="{top: ytop, left: xleft}"> \
       <md-select-item-wrapper ng-repeat="item in mdSelectItems" ng-class="{\'active\': !isInChips(item)}" ng-show="inputQuery(item)" ng-click="toggleItem(item)"> \
         <md-select-item-title >{{item.mainTitle}}</md-select-item-title> \
+        <span ng-show="!isInChips(item)" class="checksymbol"> \
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"> \
+            <path d=\"M0 0h24v24h-24z\" fill=\"none\"/> \
+            <path d=\"M9 16.17l-4.17-4.17-1.42 1.41 5.59 5.59 12-12-1.41-1.41z\"/> \
+          </svg> \
+        </span> \
       </md-select-item-wrapper> \
     </md-select-list> \
   </md-chips-wrap>';
@@ -28,13 +34,19 @@ var MD_CHIPS_SELECTBOX_TEMPLATE = '\
   <md-select-list ng-show="selectActive" class="ng-hide-add" ng-style="{top: ytop, left: xleft}"> \
     <md-select-item-wrapper ng-repeat="item in mdSelectItems" ng-class="{\'active\': !isInChips($index)}"/*ng-show="isInChips($index)" */ng-click="toggleItem($index)"> \
       <md-select-item-title >{{item.mainTitle}}</md-select-item-title> \
+      <span> \
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"> \
+          <path d=\"M0 0h24v24h-24z\" fill=\"none\"/> \
+          <path d=\"M9 16.17l-4.17-4.17-1.42 1.41 5.59 5.59 12-12-1.41-1.41z\"/> \
+        </svg> \
+      </span> \
     </md-select-item-wrapper> \
   </md-select-list>';
 angular.module('md.chips.select', [])
 .service("mdItems", function(){
 
 })
-.directive('mdChipsSelect', [/*"$mdTheming", "$mdUtil", */"$document", "$compile", "$log", "$timeout", function(/*$mdTheming, $mdUtil, */$document, $compile, $log, $timeout){
+.directive('mdChipsSelect', ["$document", "$compile", "$log", "$timeout", function($document, $compile, $log, $timeout){
   return {
     restrict: 'E',
     replace: false,

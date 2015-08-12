@@ -1,6 +1,6 @@
 {
   "name": "md-chips-select",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "description": "Material design md-chips with multiple select menu",
   "main": "md-chips-select.js",
   "scripts": {
