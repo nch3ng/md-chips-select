@@ -6,7 +6,7 @@ The Angularjs module - Learn from [Angular Material](https://material.angularjs.
 <img src="http://i359.photobucket.com/albums/oo37/Nate_Cheng/screenshot_zpshcobe0ki.png" width="70%">
 
 
-<b>Prerequisites:</b> angular.js, angular-animate.js
+<h3>Prerequisites:</h3> angular.js, angular-animate.js
 
 You can install the package
 via npm
@@ -20,7 +20,7 @@ bower install md-chips-select
 
 Include the md-chips-select.js and md-chips-select.css in the HTML file
 
-<b>In HTML:</b>
+<h4>In HTML:</h4>
 ```html
 <md-chips-select ng-model="selectedItems" select-items="listItems" main-title="name"><md-chips-select>
 ```
@@ -31,18 +31,25 @@ Include the md-chips-select.js and md-chips-select.css in the HTML file
   Ex: main-title = "name id"  
   It will combine the value of the attribute "name" and "id" (See the example below)
 </p>
-<b>In javascript:</b>
+<h4>In javascript:</h4>
 
 Inject the modules "ngAnimate" & "md.chips.select" when you initialize the app.   
-Ex: angular.module("yourApp", ['ngAnimate', 'md.chips.select']);   
-
+Ex: 
+```javascript
+angular.module("yourApp", ['ngAnimate', 'md.chips.select']);   
+```
 Add an array for ngModel (selected) in your controller   
 <p>
-Ex: $scope.selectedItems = []
+Ex: 
+```javascript
+$scope.selectedItems = []
+```
 </p>
 Add an array for select-items
 <p>
-Ex: $scope.listItems = [{    
+Ex: 
+```javascript
+$scope.listItems = [{    
       name: "Mini Cooper",    
       id: 0     
     }, {      
@@ -54,5 +61,6 @@ Ex: $scope.listItems = [{
     }, {   
       name: "Toyota Prius",   
       id: 3   
-    }];   
+    }];
+```
 </p>
