@@ -21,9 +21,9 @@ bower install md-chips-select
 Include the md-chips-select.js and md-chips-select.css in the HTML file
 
 <b>In HTML:</b>
-
-&lt;md-chips-select ng-model=&quot;selectedItems&quot; select-items=&quot;listItems&quot; main-title=&quot;name&quot;&gt;&lt;/md-chips-select&gt;
-
+```html
+<md-chips-select ng-model="selectedItems" select-items="listItems" main-title="name"><md-chips-select>
+```
 <b>ng-model (required)</b>:  The array to store the selected items<br>
 <b>select-items (required)</b>: The array of the items in the select list<br>
 <b>main-title (optional)</b>: The attributes seperated by space. It will combine all value of the attributes as the title of the list item.  If the main-title is not given, there must be one attibute named "title" in the select-items array  
