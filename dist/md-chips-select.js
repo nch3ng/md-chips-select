@@ -2,7 +2,7 @@ var MD_CHIPS_SELECT_TEMPLATE = '\
   <md-chips-wrap class="md-chips-select" ng-class="{ \'md-focused\': isFocused() }"> \
     <md-chip ng-repeat="chip in mdChipItems" class="md-chip"> \
       <span class="md-chip-content">{{chip.mainTitle}} </span>\
-      <button class="md-remove" ng-click="removeFromChips(chip)"> \
+      <button type="button" class="md-remove" ng-click="removeFromChips(chip)"> \
         <span class="remove"> \
           <svg version="1.1" x="0px" y="0px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><g><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path></g></svg> \
         </span> \
