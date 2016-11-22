@@ -153,9 +153,7 @@ angular.module('md.chips.select', [])
       scope.toggleItem = function(item) {
         
         var chipIndex = scope.ngModel.indexOf(item);
-        console.log(scope.ngModel);
-console.log(item);
-        console.log(chipIndex);
+       
         if(  chipIndex != -1 ) {
           scope.removeFromChips(item);
 
