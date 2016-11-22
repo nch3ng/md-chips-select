@@ -1,7 +1,6 @@
 var demoApp = angular.module("demoapp", ['ngAnimate', 'md.chips.select'/*, "material.components.icon", "ngMaterial",'material.core', 'material.components.autocomplete'*/])
 
 demoApp.controller('mainCtrl', ["$scope", function($scope){
-	console.log("Controller initializing...");
 }]);
 
 demoApp.controller('chipsCtrl', ["$scope", function($scope){
