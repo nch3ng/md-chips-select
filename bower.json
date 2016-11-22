@@ -1,7 +1,7 @@
 {
   "name": "md-chips-select",
   "main": "md-chips-select.js",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "homepage": "https://github.com/boo0330/md-chips-select",
   "authors": [
     "NateC <boo0330@gmail.com>"
