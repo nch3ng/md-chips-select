@@ -1,6 +1,9 @@
 {
   "name": "md-chips-select",
-  "main": "md-chips-select.js",
+  "main": [
+      "md-chips-select.js",
+      "md-chips-select.css"
+  ],
   "version": "1.0.2",
   "homepage": "https://github.com/boo0330/md-chips-select",
   "authors": [
