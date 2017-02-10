@@ -68,3 +68,4 @@ $scope.listItems = [{
 ## Contributing
 
 Feel free to improve the plugin and send us a pull request.  
+Thanks for all the [contributors](https://github.com/qqnc/md-chips-select/graphs/contributors).
