@@ -6,7 +6,7 @@ The Angularjs module - Learn from [Angular Material](https://material.angularjs.
 <img src="http://i359.photobucket.com/albums/oo37/Nate_Cheng/screenshot_zpshcobe0ki.png" width="70%">
 
 
-<h3>Prerequisites:</h3> angular.js, angular-animate.js
+<h2>Prerequisites:</h2> angular.js, angular-animate.js
 
 You can install the package
 via npm
@@ -64,3 +64,7 @@ $scope.listItems = [{
       id: 3   
     }];
 ```
+
+## Contributing
+
+Feel free to improve the plugin and send us a pull request.  
