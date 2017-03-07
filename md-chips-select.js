@@ -123,28 +123,27 @@ angular.module('md.chips.select', [])
         return scope.focus;
       }
 
-      scope.onKeyDown = function(e) {
-      	switch(e.which)
-        {
-        	case 13:
-            if(scope.chipInput && scope.chipInput != "" 
-            	&& scope.ngModel.indexOf(scope.chipInput) == -1){  
- 							  this.selectItems.find((x) => {
-                	 if(x.name.toLowerCase().includes(scope.chipInput.toLowerCase())){
-                   		scope.ngModel.push(x)
-                   };
-                });
+      scope.onKeyDown = function (e) {
+        switch (e.which) {
+          case 13:
+            if (scope.chipInput && scope.chipInput != ""
+              && scope.ngModel.indexOf(scope.chipInput) == -1) {
+              this.selectItems.find((x) => {
+                if (x.name.toLowerCase().includes(scope.chipInput.toLowerCase())) {
+                  scope.ngModel.push(x)
+                };
+              });
             }
-          	scope.chipInput = "";
-          break;
+            scope.chipInput = "";
+            break;
           case 8:
-            if (scope.chipInput == null || scope.chipInput == ""){
+            if (scope.chipInput == null || scope.chipInput == "") {
               this.ngModel.pop();
             }
-          break;
+            break;
           default:
-          	//
-          break;
+            //
+            break;
         }
       }
       
