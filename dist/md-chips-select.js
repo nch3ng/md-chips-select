@@ -101,17 +101,30 @@ angular.module('md.chips.select', [])
       }
 
       scope.onKeyDown = function(e) {
-        if(e.which==13) { //Enter
-          if(scope.chipInput && scope.chipInput != "" && scope.ngModel.indexOf(scope.chipInput) == -1)
-            this.ngModel.push(scope.chipInput)
-          scope.chipInput = "";
-        }
-        else if(e.which == 8){
-          if (scope.chipInput == null || scope.chipInput == ""){
-            this.ngModel.pop();
-          }
+      	switch(e.which)
+        {
+        	case 13:
+            if(scope.chipInput && scope.chipInput != "" 
+            	&& scope.ngModel.indexOf(scope.chipInput) == -1){  
+ 							  this.selectItems.find((x) => {
+                	 if(x.name.toLowerCase().includes(scope.chipInput.toLowerCase())){
+                   		scope.ngModel.push(x)
+                   };
+                });
+            }
+          	scope.chipInput = "";
+          break;
+          case 8:
+            if (scope.chipInput == null || scope.chipInput == ""){
+              this.ngModel.pop();
+            }
+          break;
+          default:
+          	//
+          break;
         }
       }
+      
       scope.removeFromChips = function(item){
         var chipIndex = scope.ngModel.indexOf(item);
         scope.ngModel.splice(chipIndex, 1);
