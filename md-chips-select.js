@@ -1,6 +1,6 @@
 var MD_CHIPS_SELECT_TEMPLATE = '\
   <md-chips-wrap class="md-chips-select" ng-class="{ \'md-focused\': isFocused() }"> \
-    <md-chip ng-repeat="chip in mdChipItems" class="md-chip"> \
+    <md-chip ng-repeat="chip in ngModel" class="md-chip"> \
       <span class="md-chip-content">{{chip.mainTitle}} </span>\
       <button class="md-remove" ng-click="removeFromChips(chip)"> \
         <span class="remove"> \
@@ -62,8 +62,6 @@ angular.module('md.chips.select', [])
       mainTitle: '@'
     },
     link: function (scope, element, attrs) {
-
-      scope.mdChipItems = scope.ngModel;
       scope.mdSelectItems = scope.selectItems;
 
       if(scope.mainTitle == null) {
